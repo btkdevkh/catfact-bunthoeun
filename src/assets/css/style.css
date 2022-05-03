@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  background: url('../img/bg.jpg') center center / cover no-repeat;
+}
+
+.btn {
+  @apply text-white rounded py-3 px-4 m-1 uppercase text-xs font-bold tracking-wider bg-bgCard hover:bg-green-900
+}
+
+.active {
+  background-color: darkgreen;
+}
+
+.random__fact {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  transition: visibility 0.3s;
+}
+
+.random__fact.active {
+  visibility: visible;
+}

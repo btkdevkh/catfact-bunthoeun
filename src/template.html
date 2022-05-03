@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body class="font-body relative">
+  <nav>
+    <div class="container mx-auto p-5">
+      <a href="/">
+        <h1 class="text-gray-700 text-5xl"><i class="fa-solid fa-cat"></i> Cat Ninja</h1>
+      </a>
+    </div>
+  </nav>
+  <main class="container mx-auto p-5">
+    <!-- Breed List -->
+    <section class="mb-8 breed__list">
+      <div class="grid md:grid-cols-3 lg:grid-cols-4 gap-4 breed__grid"></div>
+    </section>
+
+    <!-- Tooltip -->
+    <section class="random__fact"></section>
+
+    <!-- 
+      Cette fonctionalité n'était pas demandé,
+      mais j'ai décidé de l'implémenter au profit de l'api déja mis en place.
+      Buttons Previous - Pagination - Next 
+    -->
+    <div class="bleed__btns text-center"></div>
+  </main>
+</body>
+</html>
